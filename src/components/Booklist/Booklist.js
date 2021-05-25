@@ -1,4 +1,5 @@
 import React from 'react'; 
+import Bookcard from '../Bookcard/Bookcard';
 import "./style.css"
 
 const Booklist = (props) => {
@@ -6,7 +7,13 @@ const Booklist = (props) => {
         <div className="list">
             {
                 props.books.map((book, i) => {
-                    return <Bookcard />
+                    return <Bookcard 
+                            image={book.volumeinfo.imageLinks.thumbnail}
+                            // title={}
+                            // author={}
+                            // description={}
+                            // link={}
+                        />
                 })
             }
 

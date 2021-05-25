@@ -19,6 +19,7 @@ class Books extends Component {
         .get("https://www.googleapis.com/books/v1/volumes")
         .query({ q: this.state.searchField })
         .then((data) => {
+            console.log(data);
             this.setState({ books: [...data.body.items]})
         })
 
@@ -32,7 +33,7 @@ class Books extends Component {
     return (
       <div>
         <Search searchBook={this.searchBook} handleSearch={this.handleSearch}/>
-        <Booklist books={this.state.books}/>
+        {/* <Booklist books={this.state.books}/> */}
       </div>
     );
   }
