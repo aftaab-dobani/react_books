@@ -8,6 +8,8 @@ const Bookcard = (props) => {
             <div className="desc">
                 <h2>{props.title}</h2>
                 <h3>{props.author}</h3>
+                <h6>{props.description}</h6>
+                <h3>{props.link}</h3>
                 
             </div>
             
