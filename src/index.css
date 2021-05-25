@@ -12,3 +12,15 @@ code {
     monospace;
 }
 
+header {
+  padding: 30px 0 30px 0;
+  background: rgb(36, 36, 36);
+  color: #fff;
+  text-align: center;
+}
+
+header h1 {
+  display: inline;
+  margin-left: 35px;
+  font-weight: 300;
+}
