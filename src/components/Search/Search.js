@@ -1,12 +1,12 @@
 import React from 'react'; 
 import "./style.css"
 
-const Search = () => {
+const Search = (props) => {
     return(
         <div className="search-area">
             <form action="">
-                <input type="text"/>
-                <button type="submit"></button>
+                <input onChange={props.handleSearch} type="text"/>
+                <button type="submit">search</button>
             </form>
 
         </div>
