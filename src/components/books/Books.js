@@ -30,10 +30,11 @@ class Books extends Component {
   }
 
   render() {
+      
     return (
       <div>
         <Search searchBook={this.searchBook} handleSearch={this.handleSearch}/>
-        {/* <Booklist books={this.state.books}/> */}
+        {this.state.books && (<Booklist books={this.state.books}/>)}
       </div>
     );
   }
